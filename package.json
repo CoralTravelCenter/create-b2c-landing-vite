@@ -1,7 +1,8 @@
 {
   "name": "create-b2c-landing-vite",
   "version": "1.0.0",
-  "main": "./index.js",
-  "type": "module",
-  "license": "MIT"
+  "bin": {
+    "create-b2c-landing-vite": "./index.js"
+  },
+  "type": "module"
 }
