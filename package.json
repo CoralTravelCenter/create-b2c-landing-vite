@@ -1,6 +1,6 @@
 {
   "name": "create-b2c-landing-vite",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./index.js",
   "bin": "./index.js",
   "type": "module"
