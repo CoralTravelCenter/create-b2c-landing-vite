@@ -1,0 +1,91 @@
+section.contacts > article .contenu {
+  .contacts__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding_Base);
+    width: 100%;
+
+    @media (min-width: 1280px) {
+      flex-direction: row;
+    }
+  }
+
+  .contacts__card {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-areas:
+      "icon phone"
+      "icon text"
+      "icon button";
+    column-gap: 24px;
+    border-radius: var(--border_Radius_LG);
+    padding: var(--padding_LG);
+    background: var(--color_Header_Bg_Elevation_Level_2);
+
+    @media (min-width: 768px) {
+      grid-template-areas:
+        "icon phone button"
+        "icon text button";
+    }
+
+    @media (min-width: 1280px) {
+      flex: 1;
+    }
+  }
+
+  .contacts__icon {
+    width: 48px;
+    height: 48px;
+    grid-area: icon;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color_Header_Bg_Accent_Alt);
+
+    @media (min-width: 768px) {
+      align-self: center;
+    }
+  }
+
+  .contacts__phone {
+    grid-area: phone;
+    margin-bottom: 8px;
+    color: var(--color_Text_Highlight);
+    font-size: var(--font_Size_Heading_5);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--font_Line_Height_Heading_5);
+    text-decoration: none;
+  }
+
+  .contacts__title {
+    grid-area: text;
+    font-size: var(--font_Size_Body);
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      max-width: 355px;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: unset;
+    }
+
+    @media (min-width: 1280px) {
+      max-width: 270px;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 340px;
+    }
+  }
+
+  .prime-btn {
+    grid-area: button;
+    @media (min-width: 768px) {
+      align-self: center;
+    }
+  }
+}
