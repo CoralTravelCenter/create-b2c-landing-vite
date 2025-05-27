@@ -1,6 +1,4 @@
 {
   "name": "create-b2c-landing-vite",
-  "version": "1.0.0",
-  "description": "Шаблон лендинга Coral B2C",
-  "license": "MIT"
+  "version": "1.0.0"
 }
