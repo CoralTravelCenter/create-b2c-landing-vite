@@ -2,7 +2,7 @@
   "env": {
     "brand": "sunmar-next",
     "cmsWidgetContainer": "<div>{{ widget_markup }}</div>",
-    "cdnAssetsURL": ""
+    "cdnAssetsURL": "//b2ccdn.sunmar.ru/content/landing-pages/<название вашей папки>"
   },
   "sections": [
   ]
