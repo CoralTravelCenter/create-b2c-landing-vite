@@ -15,11 +15,11 @@ section.hero > article .contenu {
     font-size: var(--font_Size_KV_Title_S);
     line-height: var(--font_Line_Height_Heading_1);
 
-    @media (min-width: 1024px) {
+    @include mixins.respond-up(lg) {
       font-size: var(--font_Size_KV_Title_M);
     }
 
-    @media (min-width: 1440px) {
+    @include mixins.respond-up(2xl) {
       font-size: var(--font_Size_KV_Title_L);
     }
   }
@@ -69,17 +69,18 @@ section.hero.full-width {
   overflow-x: visible;
 }
 
-
-.hidden-on-mobile {
+[data-vimeo-mobile] {
   display: block;
-  @media (max-width: 768px) {
+
+  @include mixins.respond-up(md) {
     display: none;
   }
 }
 
-.hidden-on-desktop {
+[data-vimeo-desktop] {
   display: none;
-  @media (max-width: 768px) {
+
+  @include mixins.respond-up(md) {
     display: block;
   }
 }

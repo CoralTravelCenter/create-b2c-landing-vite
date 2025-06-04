@@ -2,8 +2,8 @@
   /* === Цвета === */
   --color_Base_Light: #ffffff;
   --color_Base_Light_Alt: #f3f9ff;
-  --color_Base_Item_Overlay: rgba(0, 0, 0, 50);
-  --color_Base_Hr_Break: rgba(0, 0, 0, 4);
+  --color_Base_Item_Overlay: rgba(0, 0, 0, .50);
+  --color_Base_Hr_Break: rgba(0, 0, 0, .4);
   --color_Base_Item_Bg_1: #c2e4f6;
   --color_Base_Item_Bg_2: #f2dfd5;
   --color_Base_Item_Bg_3: #f7eddb;
@@ -37,7 +37,7 @@
   --color_Header_Bottom_Icons: #0092d0;
   --color_Text_Dark: #000000;
   --color_Text_Light: #ffffff;
-  --color_Text_Alt: rgba(0, 0, 0, 85);
+  --color_Text_Alt: rgba(0, 0, 0, .85);
   --color_Text_Highlight: #0092d0;
   --color_Btn_Bg_Default: #0092d0;
   --color_Btn_Text_Light: #ffffff;
@@ -45,11 +45,11 @@
   --color_Btn_Bg_Hover: #077dad;
   --color_Btn_Bg_Focused: #33c2ff;
   --color_Btn_Border_Focused: #0092d0;
-  --color_Btn_Text_Disabled: rgba(0, 0, 0, 25);
+  --color_Btn_Text_Disabled: rgba(0, 0, 0, .25);
   --color_Btn_Bg_Pressed: #0063b3;
-  --color_Btn_Bg_Disabled: rgba(0, 0, 0, 4);
-  --color_Btn_Border_Disabled: rgba(0, 0, 0, 15);
-  --color_Btn_Border_Ghost_Default: rgba(0, 0, 0, 15);
+  --color_Btn_Bg_Disabled: rgba(0, 0, 0, .4);
+  --color_Btn_Border_Disabled: rgba(0, 0, 0, .15);
+  --color_Btn_Border_Ghost_Default: rgba(0, 0, 0, .15);
   --color_Btn_Border_Ghost_Hover: #077dad;
   --color_Btn_Border_Ghost_Pressed: #0063b3;
   --color_Btn_Text_Ghost_Hover: #077dad;
@@ -62,14 +62,14 @@
   --color_Btn_Border_Pressed: #0063b3;
   --color_Arrow_Active: #535353;
   --color_Arrow_Hover: #33c2ff;
-  --color_Arrow_Disabled: rgba(0, 0, 0, 15);
-  --color_Arrow_Border_Disabled: rgba(0, 0, 0, 15);
+  --color_Arrow_Disabled: rgba(0, 0, 0, .15);
+  --color_Arrow_Border_Disabled: rgba(0, 0, 0, .15);
   --color_Arrow_Bg_Light: #ffffff;
   --color_Tabs_Bg_Active: #e84f0e;
   --color_Tabs_Text_Dark: #000000;
   --color_Tabs_Text_Light: #ffffff;
   --color_Pagination_Bg_Active: #077dad;
-  --color_Pagination_Bg_Default: rgba(51, 194, 255, 30);
+  --color_Pagination_Bg_Default: rgba(51, 194, 255, .30);
   --color_Pagination_Bg_Hover: #33c2ff;
   --color_Brand_Pacific_Blue: #0093d0;
   --color_Brand_Logo_Text: #0093d0;
@@ -114,11 +114,11 @@
   --margin_XXS: 4px;
   --margin_XXXS: 2px;
   /* === Сетка === */
-  --grid_desktop_L: 1920px;
-  --grid_desktop_S: 1280px;
-  --grid_tablet_H: 1024px;
-  --grid_tablet_V: 768px;
-  --grid_mobile: 428px;
+  --screen-sm: 428px; // mobile
+  --screen-md: 768px; // tablet (portrait)
+  --screen-lg: 1024px; // tablet (landscape) / small laptop
+  --screen-xl: 1280px; // desktop
+  --screen-2xl: 1440px;
   --grid_desktop_L_content: 1368px;
   --grid_desktop_S_content: 1104px;
   --grid_tablet_H_content: 864px;
@@ -167,7 +167,16 @@
   --ratio-1024: 216/95;
   --ratio-768: 19/10;
   --ratio-428: 99/130;
+
+  /* === Транзишены === */
+  --transition: 300ms ease;
 }
+
+$screen-sm: 428px; // mobile
+$screen-md: 768px; // tablet (portrait)
+$screen-lg: 1024px; // tablet (landscape) / small laptop
+$screen-xl: 1280px; // desktop
+$screen-2xl: 1440px;
 
 //@media (prefers-color-scheme: dark) {
 //  :root {

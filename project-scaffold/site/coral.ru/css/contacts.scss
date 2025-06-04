@@ -1,3 +1,5 @@
+@use '../../common/css/mixins';
+
 section.contacts > article .contenu {
   .contacts__container {
     display: flex;
@@ -5,7 +7,7 @@ section.contacts > article .contenu {
     gap: var(--padding_Base);
     width: 100%;
 
-    @media (min-width: 1280px) {
+    @include mixins.respond-up(xl) {
       flex-direction: row;
     }
   }
@@ -22,13 +24,13 @@ section.contacts > article .contenu {
     padding: var(--padding_LG);
     background: var(--color_Header_Bg_Elevation_Level_2);
 
-    @media (min-width: 768px) {
+    @include mixins.respond-up(lg) {
       grid-template-areas:
         "icon phone button"
         "icon text button";
     }
 
-    @media (min-width: 1280px) {
+    @include mixins.respond-up(xl) {
       flex: 1;
     }
   }
@@ -43,7 +45,7 @@ section.contacts > article .contenu {
     justify-content: center;
     background: var(--color_Header_Bg_Accent_Alt);
 
-    @media (min-width: 768px) {
+    @include mixins.respond-up(md) {
       align-self: center;
     }
   }
@@ -64,27 +66,27 @@ section.contacts > article .contenu {
     font-size: var(--font_Size_Body);
     margin-bottom: 16px;
 
-    @media (min-width: 768px) {
+    @include mixins.respond-up(md) {
       margin-bottom: 0;
       max-width: 355px;
     }
 
-    @media (min-width: 1024px) {
+    @include mixins.respond-up(lg) {
       max-width: unset;
     }
 
-    @media (min-width: 1280px) {
+    @include mixins.respond-up(xl) {
       max-width: 270px;
     }
 
-    @media (min-width: 1440px) {
+    @include mixins.respond-up(2xl) {
       max-width: 340px;
     }
   }
 
   .prime-btn {
     grid-area: button;
-    @media (min-width: 768px) {
+    @include mixins.respond-up(md) {
       align-self: center;
     }
   }

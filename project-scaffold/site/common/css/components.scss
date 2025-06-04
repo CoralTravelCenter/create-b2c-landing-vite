@@ -11,7 +11,7 @@ section.hero > article .contenu {
     margin: 0;
     text-align: center;
     text-decoration: none;
-    transition: background-color 300ms ease;
+    transition: background-color var(--transition);
 
     @media(hover: hover) {
       &:hover {
@@ -37,7 +37,31 @@ section.hero > article .contenu {
     background-color: var(--color_Btn_Bg_Alt);
     color: var(--color_Btn_Text_Alt);
     border: 1px solid var(--color_Btn_Bg_Alt);
-    transition: border-color 300ms ease, color 300ms ease;
+    transition: border-color var(--transition), color var(--transition);
+
+    @media(hover: hover) {
+      &:hover {
+        border-color: var(--color_Btn_Bg_Hover);
+        color: var(--color_Btn_Bg_Hover)
+      }
+    }
+
+    &:active {
+      border-color: var(--color_Btn_Border_Pressed);
+      color: var(--color_Btn_Border_Pressed);
+    }
+
+    &:focus-visible {
+      border-color: var(--color_Btn_Border_Focused);
+      outline: 1px solid var(--color_Btn_Border_Focused);
+    }
+  }
+
+  .prime-btn.ghost {
+    border: 1px solid var(--color_Btn_Border_Ghost_Default);
+    background: transparent;
+    color: var(--color_Text_Dark);
+    transition: border-color var(--transition), color var(--transition);
 
     @media(hover: hover) {
       &:hover {
@@ -60,7 +84,7 @@ section.hero > article .contenu {
   .prime-link {
     font-size: var(--font_Size_Body);
     color: var(--color_Btn_Bg_Default);
-    transition: color 300ms ease;
+    transition: color var(--transition);
 
     @media(hover: hover) {
       &:hover {
