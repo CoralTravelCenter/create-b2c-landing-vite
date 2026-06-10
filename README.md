@@ -1,1 +1,2 @@
-"# create-b2c-landing-vite" 
+# create-b2c-landing-vite
+

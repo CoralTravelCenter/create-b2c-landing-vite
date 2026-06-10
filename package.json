@@ -1,0 +1,17 @@
+{
+  "name": "create-b2c-landing",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Scaffold a new B2C landing project",
+  "main": "index.js",
+  "bin": {
+    "create-b2c-landing": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "template/"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

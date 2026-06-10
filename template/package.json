@@ -1,0 +1,25 @@
+{
+  "name": "b2c-landing-template",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "rewrite:images": "npx b2c-landing rewrite:images",
+    "cdn": "npx b2c-landing cdn",
+    "gen:markup": "npx b2c-landing gen:markup",
+    "gen:scripts": "npx b2c-landing gen:scripts",
+    "gen:styles": "npx b2c-landing gen:styles",
+    "gen:markup:watch": "npx b2c-landing gen:markup:watch",
+    "gen:scripts:watch": "npx b2c-landing gen:scripts:watch",
+    "gen:styles:watch": "npx b2c-landing gen:styles:watch",
+    "gen:all": "npx b2c-landing gen:all",
+    "dev": "npx b2c-landing dev",
+    "check": "npx b2c-landing check",
+    "block:add": "npx b2c-landing block:add",
+    "block:rename": "npx b2c-landing block:rename",
+    "build": "npx b2c-landing build"
+  },
+  "dependencies": {
+    
+  }
+}
