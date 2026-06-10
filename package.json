@@ -1,22 +1,30 @@
 {
-  "name": "create-b2c-landing-vite",
+  "name": "@coraltravelcenter/create-b2c-landing-vite",
   "type": "module",
   "version": "1.0.0",
   "description": "Scaffold a new B2C landing project",
   "main": "index.js",
   "bin": {
-    "create-b2c-landing-vite": "./index.js"
+    "create-b2c-landing-vite": "index.js"
   },
   "files": [
     "index.js",
     "template/"
   ],
-  "author": {
-    "name": "Maksim Semenov",
-    "email": "semenov.max.art@mail.ru",
-    "url": "https://github.com/im-the-g00se"
-  },
+  "author": "Maksim Semenov <semenov.max.art@mail.ru> (https://github.com/im-the-g00se)",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoralTravelCenter/create-b2c-landing-vite.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoralTravelCenter/create-b2c-landing-vite/issues"
+  },
+  "homepage": "https://github.com/CoralTravelCenter/create-b2c-landing-vite#readme"
 }
