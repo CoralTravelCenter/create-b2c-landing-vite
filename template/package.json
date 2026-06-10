@@ -1,23 +1,23 @@
 {
-  "name": "b2c-landing-template",
+  "name": "b2c-landing-vite-template",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "rewrite:images": "npx b2c-landing rewrite:images",
-    "cdn": "npx b2c-landing cdn",
-    "gen:markup": "npx b2c-landing gen:markup",
-    "gen:scripts": "npx b2c-landing gen:scripts",
-    "gen:styles": "npx b2c-landing gen:styles",
-    "gen:markup:watch": "npx b2c-landing gen:markup:watch",
-    "gen:scripts:watch": "npx b2c-landing gen:scripts:watch",
-    "gen:styles:watch": "npx b2c-landing gen:styles:watch",
-    "gen:all": "npx b2c-landing gen:all",
-    "dev": "npx b2c-landing dev",
-    "check": "npx b2c-landing check",
-    "block:add": "npx b2c-landing block:add",
-    "block:rename": "npx b2c-landing block:rename",
-    "build": "npx b2c-landing build"
+    "rewrite:images": "npx b2c-landing-vite rewrite:images",
+    "cdn": "npx b2c-landing-vite cdn",
+    "gen:markup": "npx b2c-landing-vite gen:markup",
+    "gen:scripts": "npx b2c-landing-vite gen:scripts",
+    "gen:styles": "npx b2c-landing-vite gen:styles",
+    "gen:markup:watch": "npx b2c-landing-vite gen:markup:watch",
+    "gen:scripts:watch": "npx b2c-landing-vite gen:scripts:watch",
+    "gen:styles:watch": "npx b2c-landing-vite gen:styles:watch",
+    "gen:all": "npx b2c-landing-vite gen:all",
+    "dev": "npx b2c-landing-vite dev",
+    "check": "npx b2c-landing-vite check",
+    "block:add": "npx b2c-landing-vite block:add",
+    "block:rename": "npx b2c-landing-vite block:rename",
+    "build": "npx b2c-landing-vite build"
   },
   "dependencies": {
     
